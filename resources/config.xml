@@ -1,0 +1,74 @@
+<Configuration>
+
+<ValidationTypes>
+    <!-- Validation Types go Here -->
+
+    <Unspecified>
+
+        <Options rules = "">
+
+        </Options>
+
+    </Unspecified>
+
+    <Filename>
+
+        <Options rules = "0123">
+
+        </Options>
+
+    </Filename>
+
+    <SQLQuery>
+
+        <Options rules = "0">
+
+        </Options>
+
+    </SQLQuery>
+
+
+</ValidationTypes>
+
+<ValidationRules>
+<!-- Validation Rules go here -->
+
+<IgnoreWarning  id = "0" title = "Disable the Warning.">
+    Disable this warning and remove it from being highlighted in Intelli-J IDEA.
+</IgnoreWarning>
+<AlphaNumeric id = "1" title = "Only allow Alphanumeric characters (a-z A-Z 0-9).">
+    Generate code that only allows alphanumeric characters in the String, a-z, A-Z, 0-9.
+    <regexp></regexp>
+</AlphaNumeric>
+<CreditCard id = "2" title = "Only allow valid credit card numbers.">
+    Generate code that only allows formatted credit card numbers in input.
+    <regexp></regexp>
+</CreditCard>
+<EmailAddress id = "3" title = "Only allow valid email addresses..">
+    Generate code that only allows valid email addresses in the input.
+    <regexp></regexp>
+</EmailAddress>
+<HTTPMinimal id = "4" title = "Only allow minimal HTTP characters..">
+    Generate code that only allows valid HTTP and HTTPS URL Addresses.
+    <regexp></regexp>
+</HTTPMinimal>
+<SocialSec id = "5" title = "Only allow Social Security Numbers">
+    Generate code that only allows valid Social Security Numbers.
+    <regexp></regexp>
+</SocialSec>
+<ValidFN id = "6" title = "Only allow valid filenames">
+    Generate code that only allows valid file names, with a name, a dot, and an extension.
+    <regexp></regexp>
+</ValidFN>
+<RestrictedFN id = "7" title = "Only allow certain filenames">
+    Generate code that only allows certain file names.
+    <regexp></regexp>
+</RestrictedFN>
+<RestrictedFE id = "8" title = "Only allow certain file extensions">
+    Generate code that only allows certain file extensions.
+    <regexp></regexp>
+</RestrictedFE>
+
+</ValidationRules>
+
+</Configuration>

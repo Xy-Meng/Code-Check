@@ -1,8 +1,8 @@
 <idea-plugin version="2">
-  <id>com.intellij.codeInspection</id>
-  <name>CodeCheck Code Inspection Tool</name>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>Plugin display name here</name>
   <version>1.0</version>
-  <vendor email="cfranc22@students.kennesaw.edu" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
   <description><![CDATA[
       Enter short description for your plugin here.<br>
@@ -25,10 +25,7 @@
   -->
 
   <extensions defaultExtensionNs="com.intellij">
-    <inspectionToolProvider implementation="com.intellij.codeInspection.Provider"/>
-
-    <toolWindow id="CodeCheck Input Validation" secondary="true" icon="/myToolWindow/plus.png" anchor="right"
-                factoryClass="InputValidation"/>
+    <!-- Add your extensions here -->
   </extensions>
 
   <actions>

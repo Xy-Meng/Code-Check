@@ -1,12 +1,12 @@
 <idea-plugin version="2">
-  <id>com.codecheck</id>
-  <name>CodeCheck</name>
+  <id>com.intellij.codeInspection</id>
+  <name>CodeCheck Code Inspection Tool</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="cfranc22@students.kennesaw.edu" url="http://www.yourcompany.com">YourCompany</vendor>
 
   <description><![CDATA[
-      CodeCheck for IDEA and Android Studio. Performs code inpsection for Java code.<br>
-
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
     ]]></description>
 
   <change-notes><![CDATA[
@@ -25,7 +25,10 @@
   -->
 
   <extensions defaultExtensionNs="com.intellij">
-    <inspectionToolProvider implementation="com.intellij.codeInspection.ComparingReferencesProvider"/>
+    <inspectionToolProvider implementation="com.intellij.codeInspection.Provider"/>
+
+    <toolWindow id="CodeCheck Input Validation" secondary="true" icon="/myToolWindow/plus.png" anchor="right"
+                factoryClass="InputValidation"/>
   </extensions>
 
   <actions>
